@@ -52,23 +52,16 @@ console.log(scores);
 
 // Object added to Musa object
 
-function createPerson(name, age, location, _jambscores) {
+function createPerson(name, age, location, scores) {
     return {
         Name: name,
         Age: age,
         Location: location,
-        JambScores: function _jambscores(eng1, govt1, lit1, crk1) {
-            return {
-                ENG1: eng1,
-                MTH1: govt1,
-                CHEM1: lit1,
-                PHY1: crk1,
-            }
-        }
+        JambScores: scores
     }
 }
 
-const person1 = createPerson('Musa Dawodu', 19, 'Lekki - Lagos State');
+const person1 = createPerson('Musa Dawodu', 19, 'Lekki - Lagos State', scores);
 console.log(person1);
 
 //QUESTION 4 - CLONING AN OBJECT
